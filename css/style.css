@@ -11,6 +11,7 @@
 body {
     font-size: 16px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #333;
 }
 
 
@@ -302,8 +303,14 @@ ul {
 
 
 /* セクション・SHOP */
+.shop_area {
+    margin: 10vw 0;
+}
+
 .shop_visual img {
     width: 100%;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+
 }
 
 #shop {
@@ -313,37 +320,87 @@ ul {
 .square4 {
     position: absolute;
     z-index: 1;
-    margin : auto;
-    width : 50vw;
-    height : 47.8vw;
+    width : 100vw;
+    height : 48.5vw;
     background-color: #8e7b28;
-    opacity: 0.6;
-    margin-top: -6.5%;
-    clip-path: polygon(0 0, 40% 5%, 100% 87.5%, 0% 100%);
+    opacity: 0.4;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+
 }
 
 #shop h2 {
     position: absolute;
-    top: 22vw;
+    z-index: 1;
+    top: 20vw;
     left: 45vw;
     font-size: 4vw;
-
+    font-family: 'Cormorant', serif;
 }
 
+#shop h2::after {
+    content: '>';
+    margin-left: 2vw;
+}
 
-
-
-
-
-
-
-
+.shop_area p {
+    margin: 0;
+}
 
 
 /* セクション・NEWS */
 .news_visual img {
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
+
+
+.news_area {
+    text-align: center;
+}
+
+.news_area h2 {
+    font-size: 4vw;
+    font-family: 'Cormorant', serif;
+}
+
+.news {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+
+.news_visual {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.news h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+.news .date {
+    margin-left: 180px;
+}
+
+
+
+.more {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
 
 .footer_logo {
     width: 200px;
