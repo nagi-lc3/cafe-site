@@ -7,27 +7,340 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-size: 16px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-.header_logo {
-    width: 200px;
+
+/* コンテンツ */
+.container {
+    display: inline-block;
 }
 
+
+/* ヘッダー */
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.header_logo {
+    width: 12vw;
+    margin-left: 3vw;
+}
+
+
+/* ナビゲーション */
+ul {
+    padding-left: 0;
+}
+
+.header_nav {
+    display: inline-flex;
+    list-style: none;
+    text-align: right;
+}
+
+.header_nav li {
+  display: inline-block;
+  margin-left: 11vw;
+}
+
+.header_nav li a {
+  text-decoration: none;
+  color: #8e7b28;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+/* メインビジュアル */
+.triangle1 {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 45vw 25vw 0 0;
+    border-color: #cfccbc transparent transparent transparent;
+    opacity: 0.8;
+}
+
+.triangle2 {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 70vw 30vw 0 0;
+    border-color: #8e7b28 transparent transparent transparent;
+    opacity: 0.6;
+}
+
+.mainvisual {
+    margin: 0;
+}
 .mainvisual img {
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    margin-bottom: -6.5%;
 }
 
-.menu_visual img {
-    width: 300px;
+
+/* セクション・キャッチコピー */
+.catchphrase {
+    position: relative;
 }
 
+.square1 {
+    position: absolute;
+    z-index: 1;
+    margin : auto;
+    width : 50vw;
+    height : 47.8vw;
+    background-color: #8e7b28;
+    opacity: 0.6;
+    margin-top: -6.5%;
+    clip-path: polygon(0 0, 40% 5%, 100% 87.5%, 0% 100%);
+}
+
+.catchvisual {
+    margin: 0;
+}
+
+.catchvisual img {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+    margin-top: -6.5%;
+    margin-bottom: -12.5%;
+}
+
+.catchphrase h2 {
+    position: absolute;
+    z-index: 3;
+    font-size: 2.5vw;
+    color: white;
+    left: 15%;
+    top: 10%;
+}
+
+.frase {
+    position: absolute;
+    z-index: 3;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    color: white;
+    left: 16%;
+    top: 25%;
+}
+
+
+/* メインコンテンツ */
+/* セクション・MENU */
+.menu_visual1 img{
+    width: 65%
+}
+
+#menu {
+    position: relative;
+    z-index: 1;
+    height: 20vw;
+}
+
+.triangle3 {
+    position: absolute;
+    z-index: -1;
+    width        : 100%;
+    height       : 20vw;
+    background   : linear-gradient(to bottom, #8e7b28, #cfccbc);
+    clip-path: polygon(100% 0, 0 61%, 100% 100%);
+    opacity: 0.6;
+}
+
+#menu h2 {
+    position: absolute;
+    z-index: 1;
+    top: 12vw;
+    left: 75.5vw;
+    color: #8e7b28;
+    font-size: 5vw;
+    font-family: 'Cormorant', serif;
+}
+
+.menu1 {
+    position: relative;
+    height: 59vw;
+}
+
+.square2 {
+    position: absolute;
+    z-index: 1;
+    width : 5vw;
+    height : 22vw;
+    background-color: #8e7b28;
+    top: 10vw;
+    left: 85vw;
+}
+
+.menu1 h3 {
+    position: absolute;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    top: 11vw;
+    left: 85.5vw;
+    margin: 0;
+    font-size: 4vw;
+    letter-spacing: 2vw;
+    color: white;
+    font-family: 'Tangerine', cursive;
+}
+
+.menu1 h4 {
+    position: absolute;
+    top: 15vw;
+    right: 42vw;
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.menu1 .text1 {
+    position: absolute;
+    top: 20vw;
+    right: 48vw;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+.menu_visual {
+    margin: 0;
+}
+
+.menu1 .menu_visual1 {
+    position: absolute;
+    top: 15vw;
+    left: 67vw;
+}
+
+.menu1 .menu_visual2 {
+    position: absolute;
+    top: 35vw;
+    left: 40vw;
+}
+
+.menu_visual2 img{
+    width: 55%;
+}
+
+
+.menu_visual3 img{
+    width: 23.55%;
+}
+.menu2 {
+    position: relative;
+    height: 59vw;
+}
+
+.square3 {
+    position: absolute;
+    z-index: 1;
+    width : 5vw;
+    height : 18vw;
+    background-color: #8e7b28;
+    top: 10vw;
+    left: 10vw;
+}
+
+.menu2 h3 {
+    position: absolute;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    top: 11vw;
+    left: 10vw;
+    margin: 0;
+    font-size: 4vw;
+    letter-spacing: 2vw;
+    color: white;
+    font-family: 'Tangerine', cursive;
+}
+
+.menu2 h4 {
+    position: absolute;
+    top: 15vw;
+    right: 21.5vw;
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.menu2 .text2 {
+    position: absolute;
+    top: 20vw;
+    right: 14.5vw;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+
+.menu2 .menu_visual3 {
+    position: absolute;
+    top: 15vw;
+    left: 12vw;
+}
+
+.menu2 .menu_visual4 {
+    position: absolute;
+    top: 35vw;
+    left: 28vw;
+}
+
+
+.menu_visual4 img{
+    width: 45.61%;
+}
+
+
+/* セクション・SHOP */
 .shop_visual img {
     width: 100%;
 }
 
+#shop {
+    position: relative;
+}
+
+.square4 {
+    position: absolute;
+    z-index: 1;
+    margin : auto;
+    width : 50vw;
+    height : 47.8vw;
+    background-color: #8e7b28;
+    opacity: 0.6;
+    margin-top: -6.5%;
+    clip-path: polygon(0 0, 40% 5%, 100% 87.5%, 0% 100%);
+}
+
+#shop h2 {
+    position: absolute;
+    top: 22vw;
+    left: 45vw;
+    font-size: 4vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* セクション・NEWS */
 .news_visual img {
     width: 150px;
 }
