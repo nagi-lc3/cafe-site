@@ -26,6 +26,7 @@ body {
     display: flex;
     position: fixed;
     z-index: 10;
+    height: 3.2vw;
 }
 
 .header_logo {
@@ -33,28 +34,39 @@ body {
     margin-left: 3vw;
 }
 
+.header_logo img:hover {
+    opacity: 0.8;
+}
+
 
 /* ナビゲーション */
 ul {
     padding-left: 0;
+    margin: 0;
+    margin-top: 1.5vw;
 }
 
 .header_nav {
     display: inline-flex;
     list-style: none;
     text-align: right;
+    height: 3.2vw;
 }
 
 .header_nav li {
   display: inline-block;
-  margin-left: 11vw;
+  margin-left: 13vw;
 }
 
 .header_nav li a {
   text-decoration: none;
   color: #8e7b28;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
+}
+
+.header_nav li a:hover {
+    color: #cfccbc;
 }
 
 
@@ -76,7 +88,7 @@ ul {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 70vw 30vw 0 0;
+    border-width: 70vw 28vw 0 0;
     border-color: #8e7b28 transparent transparent transparent;
     opacity: 0.6;
 }
@@ -113,6 +125,7 @@ ul {
 }
 
 .catchvisual img {
+    z-index: -1;
     width: 100%;
     clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
     margin-top: -6.5%;
@@ -310,7 +323,12 @@ ul {
 .shop_visual img {
     width: 100%;
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+    transition:1s all;
+}
 
+.shop_visual img:hover {
+  transform:scale(1.2,1.2);
+  transition:1s all;
 }
 
 #shop {
@@ -518,20 +536,31 @@ ul {
     font-family: 'Amiri', serif;
 }
 
+.news_area p img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.square5:hover,
+.more p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 
 /* セクション・CONTACT */
 .contact_area {
     position: relative;
     width: 100%;
-    height: 90vw;
-    background-color: #dfdfdf;
-    clip-path: polygon(0 15%, 100% 0, 100% 40%, 0% 100%);
+    height: 50vw;
+    background: linear-gradient(to bottom, #dfdfdf, white);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .contact_area h2 {
     position: absolute;
     top: 15vw;
-    left: 43vw;
+    left: 41vw;
     font-size: 4vw;
     font-family: 'Cormorant', serif;
 }
@@ -542,82 +571,184 @@ ul {
 
 .square6 {
     position: absolute;
-    top: 23.5vw;
-    left: 18vw;
-    width: 30vw;
+    top: 27vw;
+    left: 16vw;
+    width: 32vw;
     height: 5vw;
     background: #8e7b28;
 }
 
 .contact_area .contact1 p {
     position: absolute;
-    top: 25vw;
-    left: 20vw;
+    top: 29vw;
+    left: 18vw;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .square7 {
     position: absolute;
-    top: 23.5vw;
-    left: 52vw;
-    width: 30vw;
+    top: 27vw;
+    left: 51vw;
+    width: 32vw;
     height: 5vw;
     background: #8e7b28;
 }
 
 .contact_area .contact2 p {
     position: absolute;
-    top: 25vw;
-    left: 60vw;
+    top: 29vw;
+    left: 53vw;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .square8 {
     position: absolute;
-    top: 33.5vw;
-    left: 18vw;
-    width: 30vw;
+    top: 35vw;
+    left: 16vw;
+    width: 32vw;
     height: 5vw;
     background: #8e7b28;
 }
 
 .contact_area .contact3 p {
     position: absolute;
-    top: 30vw;
-    left: 20vw;
+    top: 37vw;
+    left: 18vw;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .square9 {
     position: absolute;
-    top: 33.5vw;
-    left: 52vw;
-    width: 30vw;
+    top: 35vw;
+    left: 51vw;
+    width: 32vw;
     height: 5vw;
     background: #8e7b28;
 }
 
 .contact_area .contact4 p {
     position: absolute;
-    top: 30vw;
-    left: 60vw;
+    top: 37vw;
+    left: 53vw;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
+.square6:hover,
+.square7:hover,
+.square8:hover,
+.square9:hover,
+.contact_area p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 
 /* フッター */
 .footer {
-    height: 50vw;
+    background-image: url(../images/footer.jpg);
+	/* タイル状に繰り返し表示しない */
+	background-repeat: repeat;
+	/* 天地左右の中央に配置 */
+	background-position: center center;
+	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+	background-attachment: fixed;
+	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+	background-size: cover;
+
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+
+    position: relative;
+    height: 30vw;
 }
 
 
-
-
 .footer_logo {
-    width: 200px;
+    position: absolute;
+    bottom: 1vw;
+    left: 20vw;
+    width: 8%;
+    margin: 0;
+}
+
+.footer .footer_nav ul {
+    position: absolute;
+    bottom: 8vw;
+    left: 39.3vw;
+    display: flex;
+    margin: 0;
+    color: white;
+}
+
+.footer .footer_nav ul li{
+    margin-left: 5.5vw;
+    list-style-type:none;
+    font-size: 1.5vw;
+    font-family: 'Amiri', serif;
+}
+
+.footer .footer_nav ul li a:hover {
+    color: #8e7b28;
+}
+
+.footer .footer_nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer .sns_logo1 a img {
+    position: absolute;
+    bottom: 2vw;
+    left: 45vw;
+    width: 3%;
+}
+
+.footer .sns_logo2 a img {
+    position: absolute;
+    bottom: 2vw;
+    left: 48.5vw;
+    width: 3%;
+
+
+}
+
+.footer .sns_logo3 a img {
+    position: absolute;
+    bottom: 2vw;
+    left: 52vw;
+    width: 3%;
+}
+
+.footer .sns_logo1 a img:hover,
+.footer .sns_logo2 a img:hover,
+.footer .sns_logo3 a img:hover {
+    opacity: 0.8;
+}
+
+.footer small {
+    position: absolute;
+    bottom: 2vw;
+    left: 56.6vw;
+    color: white;
+    font-size: 1vw;
+}
+
+
+/* アニメーション */
+body {
+    animation: fadeIn 3s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
 }
