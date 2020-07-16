@@ -1,3 +1,4 @@
+// リンク内移動を滑らかに
 $(function () {
   $('a[href^=#]').click(function () {
     var adjust = 0;

@@ -1,56 +1,52 @@
 @charset "UTF-8";
 @import url("normalize.css");
-
-/* ------- Reset all CSS Styles */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
-    font-size: 16px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    color: #333;
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #333;
 }
-
 
 /* コンテンツ */
+
 .container {
-    display: inline-block;
+  display: inline-block;
 }
 
-
 /* ヘッダー */
+
 .header {
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    height: 3.2vw;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  height: 3.2vw;
 }
 
 .header_logo {
-    width: 12vw;
-    margin-left: 3vw;
+  width: 12vw;
+  margin-left: 3vw;
 }
 
 .header_logo img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
-
 /* ナビゲーション */
+
 ul {
-    padding-left: 0;
-    margin: 0;
-    margin-top: 1.5vw;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 1.5vw;
 }
 
 .header_nav {
-    display: inline-flex;
-    list-style: none;
-    text-align: right;
-    height: 3.2vw;
+  display: inline-flex;
+  list-style: none;
+  text-align: right;
+  height: 3.2vw;
 }
 
 .header_nav li {
@@ -60,695 +56,722 @@ ul {
 
 .header_nav li a {
   text-decoration: none;
-  color: #8e7b28;
   font-weight: bold;
   font-size: 1.5vw;
+  color: #8e7b28;
 }
 
 .header_nav li a:hover {
-    color: #cfccbc;
+  color: #cfccbc;
 }
 
-
 /* メインビジュアル */
+
 .triangle1 {
-    position: absolute;
-    z-index: 2;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 45vw 25vw 0 0;
-    border-color: #cfccbc transparent transparent transparent;
-    opacity: 0.8;
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 45vw 25vw 0 0;
+  border-color: #cfccbc transparent transparent transparent;
+  opacity: 0.8;
 }
 
 .triangle2 {
-    position: absolute;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 70vw 28vw 0 0;
-    border-color: #8e7b28 transparent transparent transparent;
-    opacity: 0.6;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70vw 28vw 0 0;
+  border-color: #8e7b28 transparent transparent transparent;
+  opacity: 0.6;
 }
 
 .mainvisual {
-    margin: 0;
-}
-.mainvisual img {
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-    margin-bottom: -6.5%;
+  margin: 0;
 }
 
+.mainvisual img {
+  width: 100%;
+  margin-bottom: -6.5%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+}
 
 /* セクション・キャッチコピー */
+
 .catchphrase {
-    position: relative;
+  position: relative;
 }
 
 .square1 {
-    position: absolute;
-    z-index: 1;
-    margin : auto;
-    width : 50vw;
-    height : 47.8vw;
-    background-color: #8e7b28;
-    opacity: 0.6;
-    margin-top: -6.5%;
-    clip-path: polygon(0 0, 40% 5%, 100% 87.5%, 0% 100%);
+  position: absolute;
+  z-index: 1;
+  width: 50vw;
+  height: 47.8vw;
+  margin: auto;
+  margin-top: -6.5%;
+  background-color: #8e7b28;
+  opacity: 0.6;
+  clip-path: polygon(0 0, 40% 5%, 100% 87.5%, 0% 100%);
 }
 
 .catchvisual {
-    margin: 0;
+  margin: 0;
 }
 
 .catchvisual img {
-    z-index: -1;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
-    margin-top: -6.5%;
-    margin-bottom: -12.5%;
+  z-index: -1;
+  width: 100%;
+  margin-top: -6.5%;
+  margin-bottom: -12.5%;
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
 }
 
 .catchphrase h2 {
-    position: absolute;
-    z-index: 3;
-    font-size: 2.5vw;
-    color: white;
-    left: 15%;
-    top: 10%;
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 15%;
+  font-size: 2.5vw;
+  color: white;
 }
 
 .frase {
-    position: absolute;
-    z-index: 3;
-    font-size: 1.5vw;
-    line-height: 3vw;
-    color: white;
-    left: 16%;
-    top: 25%;
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 16%;
+  font-size: 1.5vw;
+  line-height: 3vw;
+  color: white;
 }
 
-
 /* メインコンテンツ */
+
 /* セクション・MENU */
-.menu_visual1 img{
-    width: 65%
+
+.menu_visual1 img {
+  width: 65%
 }
 
 #menu {
-    position: relative;
-    z-index: 1;
-    height: 20vw;
+  position: relative;
+  z-index: 1;
+  height: 20vw;
 }
 
 .triangle3 {
-    position: absolute;
-    z-index: -1;
-    width        : 100%;
-    height       : 20vw;
-    background   : linear-gradient(to bottom, #8e7b28, #cfccbc);
-    clip-path: polygon(100% 0, 0 61%, 100% 100%);
-    opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 20vw;
+  opacity: 0.6;
+  background: linear-gradient(to bottom, #8e7b28, #cfccbc);
+  clip-path: polygon(100% 0, 0 61%, 100% 100%);
 }
 
 #menu h2 {
-    position: absolute;
-    z-index: 1;
-    top: 12vw;
-    left: 75.5vw;
-    color: #8e7b28;
-    font-size: 5vw;
-    font-family: 'Cormorant', serif;
+  position: absolute;
+  z-index: 1;
+  top: 12vw;
+  left: 75.5vw;
+  font-size: 5vw;
+  font-family: 'Cormorant', serif;
+  color: #8e7b28;
 }
 
 .menu1 {
-    position: relative;
-    height: 59vw;
+  position: relative;
+  height: 59vw;
 }
 
 .square2 {
-    position: absolute;
-    z-index: 1;
-    width : 5vw;
-    height : 22vw;
-    background-color: #8e7b28;
-    top: 10vw;
-    left: 85vw;
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  left: 85vw;
+  width: 5vw;
+  height: 22vw;
+  background-color: #8e7b28;
 }
 
 .menu1 h3 {
-    position: absolute;
-    z-index: 2;
-    writing-mode: vertical-rl;
-    top: 11vw;
-    left: 85.5vw;
-    margin: 0;
-    font-size: 4vw;
-    letter-spacing: 2vw;
-    color: white;
-    font-family: 'Tangerine', cursive;
+  position: absolute;
+  z-index: 2;
+  top: 11vw;
+  left: 85.5vw;
+  margin: 0;
+  font-size: 4vw;
+  letter-spacing: 2vw;
+  font-family: 'Tangerine', cursive;
+  color: white;
+  writing-mode: vertical-rl;
 }
 
 .menu1 h4 {
-    position: absolute;
-    top: 15vw;
-    right: 42vw;
-    font-size: 2.5vw;
-    margin: 0;
+  position: absolute;
+  top: 15vw;
+  right: 42vw;
+  margin: 0;
+  font-size: 2.5vw;
 }
 
 .menu1 .text1 {
-    position: absolute;
-    top: 20vw;
-    right: 48vw;
-    font-size: 1.5vw;
-    line-height: 3vw;
+  position: absolute;
+  top: 20vw;
+  right: 48vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
 }
 
 .menu_visual {
-    margin: 0;
+  margin: 0;
 }
 
 .menu1 .menu_visual1 {
-    position: absolute;
-    top: 15vw;
-    left: 67vw;
+  position: absolute;
+  top: 15vw;
+  left: 67vw;
 }
 
 .menu1 .menu_visual2 {
-    position: absolute;
-    top: 35vw;
-    left: 40vw;
+  position: absolute;
+  top: 35vw;
+  left: 40vw;
 }
 
-.menu_visual2 img{
-    width: 55%;
+.menu_visual2 img {
+  width: 55%;
 }
 
-
-.menu_visual3 img{
-    width: 23.55%;
+.menu_visual3 img {
+  width: 23.55%;
 }
+
 .menu2 {
-    position: relative;
-    height: 59vw;
+  position: relative;
+  height: 59vw;
 }
 
 .square3 {
-    position: absolute;
-    z-index: 1;
-    width : 5vw;
-    height : 18vw;
-    background-color: #8e7b28;
-    top: 10vw;
-    left: 10vw;
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  left: 10vw;
+  width: 5vw;
+  height: 18vw;
+  background-color: #8e7b28;
 }
 
 .menu2 h3 {
-    position: absolute;
-    z-index: 2;
-    writing-mode: vertical-rl;
-    top: 11vw;
-    left: 10vw;
-    margin: 0;
-    font-size: 4vw;
-    letter-spacing: 2vw;
-    color: white;
-    font-family: 'Tangerine', cursive;
+  position: absolute;
+  z-index: 2;
+  top: 11vw;
+  left: 10vw;
+  margin: 0;
+  font-size: 4vw;
+  letter-spacing: 2vw;
+  font-family: 'Tangerine', cursive;
+  color: white;
+  writing-mode: vertical-rl;
 }
 
 .menu2 h4 {
-    position: absolute;
-    top: 15vw;
-    right: 21.5vw;
-    font-size: 2.5vw;
-    margin: 0;
+  position: absolute;
+  top: 15vw;
+  right: 21.5vw;
+  margin: 0;
+  font-size: 2.5vw;
 }
 
 .menu2 .text2 {
-    position: absolute;
-    top: 20vw;
-    right: 14.5vw;
-    font-size: 1.5vw;
-    line-height: 3vw;
+  position: absolute;
+  top: 20vw;
+  right: 14.5vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
 }
 
-
 .menu2 .menu_visual3 {
-    position: absolute;
-    top: 15vw;
-    left: 12vw;
+  position: absolute;
+  top: 15vw;
+  left: 12vw;
 }
 
 .menu2 .menu_visual4 {
-    position: absolute;
-    top: 35vw;
-    left: 28vw;
+  position: absolute;
+  top: 35vw;
+  left: 28vw;
 }
 
-
-.menu_visual4 img{
-    width: 45.61%;
+.menu_visual4 img {
+  width: 45.61%;
 }
-
 
 /* セクション・SHOP */
+
 .shop_area {
-    margin: 10vw 0;
+  margin: 10vw 0;
 }
 
 .shop_visual img {
-    width: 100%;
-    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
-    transition:1s all;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+  transition: 1s all;
 }
 
 .shop_visual img:hover {
-  transform:scale(1.2,1.2);
-  transition:1s all;
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
 }
 
 #shop {
-    position: relative;
+  position: relative;
 }
 
 .square4 {
-    position: absolute;
-    z-index: 1;
-    width : 100vw;
-    height : 48.5vw;
-    background-color: #8e7b28;
-    opacity: 0.4;
-    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
-
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 48.5vw;
+  background-color: #8e7b28;
+  opacity: 0.4;
+  clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
 }
 
 #shop h2 {
-    position: absolute;
-    z-index: 1;
-    top: 20vw;
-    left: 45vw;
-    font-size: 4vw;
-    font-family: 'Cormorant', serif;
+  position: absolute;
+  z-index: 1;
+  top: 20vw;
+  left: 45vw;
+  font-size: 4vw;
+  font-family: 'Cormorant', serif;
 }
 
 #shop h2::after {
-    content: '>';
-    margin-left: 2vw;
+  content: '>';
+  margin-left: 2vw;
 }
 
 .shop_area p {
-    margin: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-
 /* セクション・NEWS */
+
 .news_visual1 img {
-    width: 10%;
+  width: 10%;
 }
 
 .news_visual2 img {
-    width: 19.9%;
+  width: 19.9%;
 }
 
-
 .news_area {
-    position: relative;
-    height: 60vw;
+  position: relative;
+  height: 60vw;
 }
 
 .news_area h2 {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 45vw;
-    font-size: 4vw;
-    font-family: 'Cormorant', serif;
+  position: absolute;
+  top: 0;
+  left: 45vw;
+  margin: 0;
+  font-size: 4vw;
+  font-family: 'Cormorant', serif;
 }
 
 .news_visual {
-    margin: 0;
+  margin: 0;
 }
 
 .news1 .news_visual {
-    position: absolute;
-    top: 10vw;
-    left: 16vw;
+  position: absolute;
+  top: 10vw;
+  left: 16vw;
 }
 
 .news1 h3 {
-    position: absolute;
-    top: 10vw;
-    left: 26vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 10vw;
+  left: 26vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news1 .date {
-    position: absolute;
-    top: 15vw;
-    left: 26vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 15vw;
+  left: 26vw;
+  font-size: 1vw;
 }
 
 .news2 .news_visual {
-    position: absolute;
-    top: 10vw;
-    left: 57vw;
+  position: absolute;
+  top: 10vw;
+  left: 57vw;
 }
 
 .news2 h3 {
-    position: absolute;
-    top: 10vw;
-    left: 67vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 10vw;
+  left: 67vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news2 .date {
-    position: absolute;
-    top: 15vw;
-    left: 67vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 15vw;
+  left: 67vw;
+  font-size: 1vw;
 }
 
 .news3 .news_visual {
-    position: absolute;
-    top: 20vw;
-    left: 16vw;
+  position: absolute;
+  top: 20vw;
+  left: 16vw;
 }
 
 .news3 h3 {
-    position: absolute;
-    top: 20vw;
-    left: 26vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 20vw;
+  left: 26vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news3 .date {
-    position: absolute;
-    top: 25vw;
-    left: 26vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 25vw;
+  left: 26vw;
+  font-size: 1vw;
 }
 
 .news4 .news_visual {
-    position: absolute;
-    top: 20vw;
-    left: 57vw;
+  position: absolute;
+  top: 20vw;
+  left: 57vw;
 }
 
 .news4 h3 {
-    position: absolute;
-    top: 20vw;
-    left: 67vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 20vw;
+  left: 67vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news4 .date {
-    position: absolute;
-    top: 25vw;
-    left: 67vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 25vw;
+  left: 67vw;
+  font-size: 1vw;
 }
 
 .news5 .news_visual {
-    position: absolute;
-    top: 30vw;
-    left: 16vw;
+  position: absolute;
+  top: 30vw;
+  left: 16vw;
 }
 
 .news5 h3 {
-    position: absolute;
-    top: 30vw;
-    left: 26vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 30vw;
+  left: 26vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news5 .date {
-    position: absolute;
-    top: 35vw;
-    left: 26vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 35vw;
+  left: 26vw;
+  font-size: 1vw;
 }
 
 .news6 .news_visual {
-    position: absolute;
-    top: 30vw;
-    left: 57vw;
+  position: absolute;
+  top: 30vw;
+  left: 57vw;
 }
 
 .news6 h3 {
-    position: absolute;
-    top: 30vw;
-    left: 67vw;
-    font-size: 1vw;
-    line-height: 2vw;
+  position: absolute;
+  top: 30vw;
+  left: 67vw;
+  font-size: 1vw;
+  line-height: 2vw;
 }
 
 .news6 .date {
-    position: absolute;
-    top: 35vw;
-    left: 67vw;
-    font-size: 1vw;
+  position: absolute;
+  top: 35vw;
+  left: 67vw;
+  font-size: 1vw;
 }
 
 .more .square5 {
-    position: absolute;
-    top: 45vw;
-    left: 40.5vw;
-    width: 20vw;
-    height: 5vw;
-    background: #8e7b28;
+  position: absolute;
+  top: 45vw;
+  left: 40.5vw;
+  width: 20vw;
+  height: 5vw;
+  background: #8e7b28;
 }
 
 .more p {
-    position: absolute;
-    top: 45.5vw;
-    left: 46vw;
-    font-size: 1.5vw;
-    font-family: 'Amiri', serif;
+  position: absolute;
+  top: 45.5vw;
+  left: 46vw;
+  font-size: 1.5vw;
+  font-family: 'Amiri', serif;
+}
+
+.news_area p {
+  overflow: hidden;
+}
+
+.news_area p img {
+  transition: 1s all;
 }
 
 .news_area p img:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
 }
 
-.square5:hover,
-.more p:hover {
-    opacity: 0.8;
-    cursor: pointer;
+.square5:hover, .more p:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
-
 
 /* セクション・CONTACT */
+
 .contact_area {
-    position: relative;
-    width: 100%;
-    height: 50vw;
-    background: linear-gradient(to bottom, #dfdfdf, white);
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  background: linear-gradient(to bottom, #dfdfdf, white);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .contact_area h2 {
-    position: absolute;
-    top: 15vw;
-    left: 41vw;
-    font-size: 4vw;
-    font-family: 'Cormorant', serif;
+  position: absolute;
+  top: 15vw;
+  left: 41vw;
+  font-size: 4vw;
+  font-family: 'Cormorant', serif;
 }
 
 .contact_area p {
-    margin: 0;
+  margin: 0;
 }
 
 .square6 {
-    position: absolute;
-    top: 27vw;
-    left: 16vw;
-    width: 32vw;
-    height: 5vw;
-    background: #8e7b28;
+  position: absolute;
+  top: 27vw;
+  left: 16vw;
+  width: 32vw;
+  height: 5vw;
+  background: #8e7b28;
 }
 
 .contact_area .contact1 p {
-    position: absolute;
-    top: 29vw;
-    left: 18vw;
-    font-size: 1vw;
-    font-weight: bold;
+  position: absolute;
+  top: 29vw;
+  left: 18vw;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 .square7 {
-    position: absolute;
-    top: 27vw;
-    left: 51vw;
-    width: 32vw;
-    height: 5vw;
-    background: #8e7b28;
+  position: absolute;
+  top: 27vw;
+  left: 51vw;
+  width: 32vw;
+  height: 5vw;
+  background: #8e7b28;
 }
 
 .contact_area .contact2 p {
-    position: absolute;
-    top: 29vw;
-    left: 53vw;
-    font-size: 1vw;
-    font-weight: bold;
+  position: absolute;
+  top: 29vw;
+  left: 53vw;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 .square8 {
-    position: absolute;
-    top: 35vw;
-    left: 16vw;
-    width: 32vw;
-    height: 5vw;
-    background: #8e7b28;
+  position: absolute;
+  top: 35vw;
+  left: 16vw;
+  width: 32vw;
+  height: 5vw;
+  background: #8e7b28;
 }
 
 .contact_area .contact3 p {
-    position: absolute;
-    top: 37vw;
-    left: 18vw;
-    font-size: 1vw;
-    font-weight: bold;
+  position: absolute;
+  top: 37vw;
+  left: 18vw;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 .square9 {
-    position: absolute;
-    top: 35vw;
-    left: 51vw;
-    width: 32vw;
-    height: 5vw;
-    background: #8e7b28;
+  position: absolute;
+  top: 35vw;
+  left: 51vw;
+  width: 32vw;
+  height: 5vw;
+  background: #8e7b28;
 }
 
 .contact_area .contact4 p {
-    position: absolute;
-    top: 37vw;
-    left: 53vw;
-    font-size: 1vw;
-    font-weight: bold;
+  position: absolute;
+  top: 37vw;
+  left: 53vw;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
-.square6:hover,
-.square7:hover,
-.square8:hover,
-.square9:hover,
-.contact_area p:hover {
-    opacity: 0.8;
-    cursor: pointer;
+.square6:hover, .square7:hover, .square8:hover, .square9:hover, .contact_area p:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
-
 
 /* フッター */
+
 .footer {
-    background-image: url(../images/footer.jpg);
-	/* タイル状に繰り返し表示しない */
-	background-repeat: repeat;
-	/* 天地左右の中央に配置 */
-	background-position: center center;
-	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-	background-attachment: fixed;
-	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-	background-size: cover;
-
-    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
-
-    position: relative;
-    height: 30vw;
+  background-image: url(../images/footer.jpg);
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* タイル状に繰り返し表示しない */
+  background-repeat: repeat;
+  /* 天地左右の中央に配置 */
+  background-position: center center;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  position: relative;
+  height: 30vw;
+  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
 }
 
-
 .footer_logo {
-    position: absolute;
-    bottom: 1vw;
-    left: 20vw;
-    width: 8%;
-    margin: 0;
+  position: absolute;
+  bottom: 1.2vw;
+  left: 18vw;
+  width: 8%;
+  margin: 0;
 }
 
 .footer .footer_nav ul {
-    position: absolute;
-    bottom: 8vw;
-    left: 39.3vw;
-    display: flex;
-    margin: 0;
-    color: white;
+  display: flex;
+  position: absolute;
+  bottom: 8vw;
+  left: 39.3vw;
+  margin: 0;
+  color: white;
 }
 
-.footer .footer_nav ul li{
-    margin-left: 5.5vw;
-    list-style-type:none;
-    font-size: 1.5vw;
-    font-family: 'Amiri', serif;
+.footer .footer_nav ul li {
+  margin-left: 5.5vw;
+  list-style-type: none;
+  font-size: 1.5vw;
+  font-family: 'Amiri', serif;
 }
 
 .footer .footer_nav ul li a:hover {
-    color: #8e7b28;
+  color: #8e7b28;
 }
 
 .footer .footer_nav ul li a {
-    text-decoration: none;
-    color: white;
-
+  text-decoration: none;
+  color: white;
 }
 
 .footer .sns_logo1 a img {
-    position: absolute;
-    bottom: 2vw;
-    left: 45vw;
-    width: 3%;
+  position: absolute;
+  bottom: 2vw;
+  left: 44.5vw;
+  width: 3%;
+  border-radius: 100%;
 }
 
 .footer .sns_logo2 a img {
-    position: absolute;
-    bottom: 2vw;
-    left: 48.5vw;
-    width: 3%;
-
-
+  position: absolute;
+  bottom: 2vw;
+  left: 48vw;
+  width: 3%;
+  border-radius: 100%;
 }
 
 .footer .sns_logo3 a img {
-    position: absolute;
-    bottom: 2vw;
-    left: 52vw;
-    width: 3%;
+  position: absolute;
+  bottom: 2vw;
+  left: 51.5vw;
+  width: 3%;
+  border-radius: 100%;
 }
 
-.footer .sns_logo1 a img:hover,
-.footer .sns_logo2 a img:hover,
-.footer .sns_logo3 a img:hover {
-    opacity: 0.8;
+.footer .sns_logo1 a img:hover, .footer .sns_logo2 a img:hover, .footer .sns_logo3 a img:hover {
+  opacity: 0.8;
 }
 
 .footer small {
-    position: absolute;
-    bottom: 2vw;
-    left: 56.6vw;
-    color: white;
-    font-size: 1vw;
+  position: absolute;
+  bottom: 2.3vw;
+  left: 55.6vw;
+  font-size: 1vw;
+  color: white;
 }
 
-
 /* アニメーション */
+
 body {
-    animation: fadeIn 3s ease 0s 1 normal;
+  animation: fadeIn 2s ease 0s 1 normal;
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity: 0
-    }
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
 
-    100% {
-      opacity: 1
-    }
+.loading-wrap {
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.loading-anime {
+  animation-name: loadinganime;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadinganime {
+  from {
+    transform: translateX(0);
+  }
+  30%, 70% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-75%);
+  }
 }
